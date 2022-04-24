@@ -7,7 +7,7 @@ class TestUser(unittest.TestCase):
         Test class that defines test cases for the User class behaviours.
 
         Args:
-            unittest.TestCase: TestCase class that helps in creating test cases
+        unittest.TestCase: TestCase class that helps in creating test cases
         '''
 
         def setUp(self):
@@ -33,15 +33,15 @@ class TestUser(unittest.TestCase):
             self.new_user.save_user()
             self.assertEqual(len(User.user_list),1)
 
-        def test_delete_user(self):
-            '''
-            test_delete_user to test if you can remove user from user list 
-            '''
-            self.new_user.save_user()
-            test_user = User('Test','67890') #new user
-            test_user.save_user()
-            self.new_user.delete_user() #deleting user
-            self.assertEqual(len(User.user_list),1)    
+        # def test_delete_user(self):
+        #     '''
+        #     test_delete_user to test if you can remove user from user list 
+        #     '''
+        #     self.new_user.save_user()
+        #     test_user = User('Test','67890') #new user
+        #     test_user.save_user()
+        #     self.new_user.delete_user() #deleting user
+        #     self.assertEqual(len(User.user_list),1)    
 
 if __name__ == '__main__':
     unittest.main()    
