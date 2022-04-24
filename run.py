@@ -75,3 +75,14 @@ def save_credentials(credential):
     '''
 
     credential.save_credential()
+    
+    
+def check_existing_credentials(name):
+    '''
+    Function that checks if a user credential name already exists
+    Args:
+        name : the credential name
+    '''
+
+    return Credential.credential_exist(name)
+
