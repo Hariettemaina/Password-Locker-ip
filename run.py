@@ -139,4 +139,11 @@ Use these short codes to get around''')
 
             print("Password ...")
             user_password = input()
+            
+             # Create and save new user
+            save_users( create_user( user_name, user_password) )
+
+            print("\n")
+            print(f"{user_name} welcome to Password Locker")
+            print("\n")
     
