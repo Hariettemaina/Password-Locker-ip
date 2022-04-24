@@ -36,3 +36,14 @@ def check_existing_users(name):
     '''
 
     return User.user_exist(name)
+
+def user_log_in(name, password):
+    '''
+    Function that allows a user to log into their credential account
+    Args:
+        name : the name the user used to create their user account
+        password : the password the user used to create their user account
+    '''
+    log_in = User.log_in(name, password)
+    if log_in != False:
+        return User.log_in(name, password)
