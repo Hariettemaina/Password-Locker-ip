@@ -19,7 +19,7 @@ def setUp(self):
     #Create a user object
     self.new_user = User('Jolly2022' '12345')
     
-def test__init__(self):
+def test_init_(self):
     '''
     Test case to check if the object is initialized properly
     '''
@@ -27,3 +27,12 @@ def test__init__(self):
     self.asserEqual( self.new_user.user_name, 'Jolly')
     self.assertEqual( self.new_user.user_password, '12345')
     
+def tset_save_user(self):
+    '''
+    test_save_user test case to test if the user object is saved to the user list
+    '''
+    self.new_user.save_user()
+    self.assertEqual(len(User.user_list),1)
+    
+if __name__ == '__main__':
+    unittest.main()    
