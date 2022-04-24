@@ -2,7 +2,7 @@ import unittest
 from user import User
 
 
-class Testuser(unittest.TestCase):
+class TestUser(unittest.TestCase):
     
      '''
     Test class that defines test cases for the User class behaviours.
