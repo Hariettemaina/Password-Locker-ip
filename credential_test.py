@@ -85,7 +85,7 @@ class TestCredential(unittest.TestCase):
         
             self.assertEqual( len(Credential.display_credential("doe2")) , 2 )
             
-            def test_credential_exist(self):
+        def test_credential_exist(self):
             
                 '''
                 Test to check if we can return a boolean if we can't find the credential
@@ -97,10 +97,10 @@ class TestCredential(unittest.TestCase):
                 test_credential = Credential("doe2","Facebook","facebook17")
                 test_credential.save_credential()
             
-            # use contact exist method
-            credential_exists = Credential.credential_exist("Facebook")
-            
-            self.assertTrue(credential_exists)
+                # use contact exist method
+                credential_exists = Credential.credential_exist("Facebook")
+                
+                self.assertTrue(credential_exists)
             
          
                 
