@@ -102,3 +102,26 @@ def create_generated_password(name):
     password = Credential.generate_password()
 
     return password
+
+def main():
+    '''
+    Function running the Password Locker app
+    '''
+
+    print('''Welcome to Password Locker \n
+Use these short codes to get around''')
+    
+    while True:
+        '''
+        Loop that is running the entire application
+        '''
+
+        print('''   Short codes:
+        cu - create a Password Locker account \n
+        du - display names of current Password Locker users \n
+        lg - log into your Password Locker account \n
+        ex - exit the Password Locker account''')
+
+        # Get short codes from the user
+        short_code = input().lower()
+    
