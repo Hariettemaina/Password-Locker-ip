@@ -30,4 +30,12 @@ class User:
         '''
         delete_account method deletes a  saved account from the list
         '''
-        User.user_list.remove(self)     
+        User.user_list.remove(self) 
+        
+    @classmethod
+    def display_users(cls):
+        '''
+        method that retuns info from the userlist
+        '''        
+        return cls.user_list
+    
