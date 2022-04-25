@@ -26,3 +26,4 @@ Python3.8
 # Setup/Installation Requirements
 Clone this repository and run the run.py file.
 # License
+Copyright (c) 2022 Hariettemaina
